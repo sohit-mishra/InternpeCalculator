@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internpe Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Internpe Calculator</h1>
+
+    <div id="outer_box">
+        <h2>0</h2>
+
+        <form>
+            <input type="button" value="C" onclick="clean()"/>
+            <input type="button" value="." onclick="num('.')"/>
+            <input type="button" value="%" onclick="operator('%')"/>
+            <input type="button" value="/" onclick="operator('/')"/>
+
+            <input type="button" value="7" onclick="num('7')"/>
+            <input type="button" value="8" onclick="num('8')"/>
+            <input type="button" value="9" onclick="num('9')"/>
+            <input type="button" value="*" onclick="operator('*')"/>
+
+            <input type="button" value="4" onclick="num('4')"/>
+            <input type="button" value="5" onclick="num('5')"/>
+            <input type="button" value="6" onclick="num('6')"/>
+            <input type="button" value="-" onclick="operator('-')"/>
+
+            <input type="button" value="3" onclick="num('3')"/>
+            <input type="button" value="2" onclick="num('2')"/>
+            <input type="button" value="1" onclick="num('1')"/>
+            <input type="button" value="+" onclick="operator('+')"/>
+
+            <input type="button" value="00" onclick="num('00')"/>
+            <input type="button" value="0" onclick="num('0')"/>
+            <input type="button" value="=" onclick="equal()"/>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
